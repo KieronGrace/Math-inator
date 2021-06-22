@@ -1,3 +1,7 @@
+# index:
+#   path: /
+#   Controller: App\Controller\HomepageController::homepage
+
 framework:
     router:
         utf8: true
