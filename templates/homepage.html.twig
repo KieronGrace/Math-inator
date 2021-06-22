@@ -7,4 +7,21 @@
 <p>Welcome to the Math-inator! the -inator to help with all your math-ing needs!
 Find the tool you need below and let the math-ing begin!</p>
 
+<!-- odd or even: user enters number and is told whether the number is odd or even -->
+<div class="math_tool">
+  <h2>Odd or even?:</h2>
+  <label for="odd_even">Enter a Number: <input type="number" name="odd_even" placeholder="1000" id="odd_even"> </label>
+  <br/>
+  <button type="submit" name="submit_odd_even" method="post" action="OddOrEven()">submit</button>
+</div>
+<div class="math_tool">
+  <!-- addition: user enters two number and is given the sum -->
+  <h2>Sum of two numbers:</h2>
+  <label for="addend_01">First number: <input type="number" name="sum" placeholder="1000" id="addend_01"> </label>
+  <br/>
+  <label for="addend_01">Second number: <input type="number" name="sum" placeholder="1000" id="addend_02"> </label>
+  <br/>
+  <button type="submit" name="submit_sum_of_two" method="post" >submit</button>
+</div>
+
 {% endblock %}
