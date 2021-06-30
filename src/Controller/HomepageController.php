@@ -26,6 +26,7 @@ class HomepageController extends AbstractController
       $oddEven = $this->createFormBuilder()
         ->add('num', NumberType::class,
             ['label' => 'Enter a number to see if it\'s odd or even!'])
+        ->add('submit', SubmitType::class)
         ->getForm();
 
       $oddEven->handleRequest($request);
