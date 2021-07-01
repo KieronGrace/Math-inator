@@ -7,6 +7,13 @@
 <p>Welcome to the Math-inator! the -inator to help with all your math-ing needs!
 Find the tool you need below and let the math-ing begin!</p>
 
-<h2><a href="{{path('odd_or_even')}}">Odd/Even-inator</a></h2>
+<div class="math_tool">
+  <!-- odd even tool -->
+  <h2>Odd/Even-inator</h2>
+  {{ form(oddEven) }}
+  {% if message is defined %}
+  {{ message }}
+  {% endif %}
+</div>
 
 {% endblock %}
